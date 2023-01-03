@@ -1,11 +1,15 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
-This is a Rectangle class.
+Created on Tue Jan 3, 2023
+@author: Aniekeme Umoren
 """
 
 
 class Rectangle:
+    """Empty class Rectangle that defines a rectangle figure
+    Attributes:
+        empty
     """
-    Create an empty Rectangle Object.
-    """
+
     pass
