@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
+<<<<<<< HEAD
 Created on Tue Jan 10th, 2023
+=======
+Created on Mon jan 9th 2023
+>>>>>>> 2032be9f271d143a323d0e19470641cb57395d26
 @author: Aniekeme Umoren
 """
 
