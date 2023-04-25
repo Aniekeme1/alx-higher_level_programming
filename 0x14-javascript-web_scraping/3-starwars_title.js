@@ -1,17 +1,12 @@
 #!/usr/bin/node
-
-// Script that prints the title of a Star Wars movie based on its episode number
+// A script that prints the title of a Star Wars movie 
 
 const request = require('request');
-const movieId = process.argv[2];
-const apiUrl = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
-
-request(apiUrl, function(error, response, body) {
-    if (error) {
-        console.log(`An error occurred while making the request: ${error}`);
-    } else {
-        const movieData = JSON.parse(body);
-        console.log(`Title of Star Wars Episode ${movieData.episode_id}: ${movieData.title}`);
-    }
+const url = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
+request(url, function (error, response, body) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log(JSON.parse(body).title);
+  }
 });
-
